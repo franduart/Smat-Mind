@@ -1,0 +1,332 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    position: relative;
+}
+.btnWhats{
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    text-align: center;
+    z-index: 2;
+    padding: 10px;
+
+  }
+  .btnWhats a{
+    text-decoration: none;
+    color: #fff;
+    background-color: green;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 60px;
+   
+  }
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    position: relative;
+    background: url('https://i.pinimg.com/736x/ac/f0/30/acf03067d755ef7afeb45926acaec1e3.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh; /* Altura do cabeçalho (tela cheia) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background-position: center;
+    background-attachment: fixed;
+}
+.progress-bar{
+  color: #5a50e2;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-content .btn-primary {
+    background-color: #6c63ff;
+    color: white;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.header-content .btn-primary:hover {
+    background-color: #5a50e2;
+    transform: translateY(-5px);
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    font-size: 2rem;
+    color: #fff;
+    animation: scrollDown 2s infinite;
+    transition: color 0.3s ease;
+}
+
+.scroll-down:hover {
+    color: #6c63ff;
+}
+
+/* Animação para o ícone de rolar para baixo */
+@keyframes scrollDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.servico-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.servico{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: 10px;
+    margin: 0 1rem;
+}
+.servico div{
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    transition: 1s ease;
+}
+.servico div:hover{
+   transform: translateY(-5px);
+   box-shadow: 0 0 10px #0000006e;
+}
+
+
+
+/* Seções */
+section {
+    padding: 3rem 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #6c63ff;
+}
+
+/* Habilidades */
+.skills-section .skills {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.skills-section .skill {
+    flex: 1;
+}
+
+.skills-section .progress-bar {
+    background: #ddd;
+    height: 8px;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.skills-section .progress-bar {
+    height: 12px;
+    border-radius: 5px;
+}
+
+/* Projetos */
+.grid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+   
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card .project-info {
+    padding: 1rem;
+}
+
+.project-card .project-info a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+/* Testemunhos */
+.testimonials-section {
+    background-color: #f0f0f0;
+}
+
+.testimonials-section .testimonials {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário */
+form input, form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #6c63ff;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #6c63ff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #a8a3ff;
+}
+
+
+
+  
+  /* Estilos para telas menores */
+  @media (max-width: 768px) {
+    .servico{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        gap: 10px;
+        margin: 0 1rem;
+    }
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .testimonials{
+        flex-direction: column;
+        width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .servico{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        gap: 10px;
+        margin: 0 1rem;
+    }
+    .servico-container p{
+        max-width: 80%;
+    }
+    .skills{
+        display: flex;
+        flex-direction:column ;
+    }
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+     .testimonials{
+        flex-direction: column;
+        width: 100%;
+    }
+    .testimonial{
+        width: 100%;
+    }
+    .btnWhats a{
+       display: none;
+       
+      }
+  }
+  
