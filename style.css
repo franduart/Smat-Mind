@@ -315,6 +315,17 @@ footer a:hover {
         flex-direction: column;
         width: 100%;
     }
+    #sobre {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .project-card img {
+        width: 100%;
+        height: auto;
+        
+    }
+
   }
   
   @media (max-width: 480px) {
@@ -348,5 +359,18 @@ footer a:hover {
        display: none;
        
       }
+      #sobre {
+        display: flex;
+        flex-direction: column;
+    }
+    #sobre img{
+        width: 200px;
+    }
+    .project-card img {
+        width: 100%;
+        height: auto;
+        
+    }
+   
   }
   
