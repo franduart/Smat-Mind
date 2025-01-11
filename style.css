@@ -68,6 +68,9 @@ header {
     margin-bottom: 2rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
+.header-content img{
+max-width: 200px;
+}
 
 .header-content .btn-primary {
     background-color: #6c63ff;
@@ -329,6 +332,9 @@ footer a:hover {
   }
   
   @media (max-width: 480px) {
+.header-content{
+height:100%;
+}
     .servico{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -371,6 +377,9 @@ footer a:hover {
         height: auto;
         
     }
+.header-content img{
+width: 100px;
+}
    
   }
   
